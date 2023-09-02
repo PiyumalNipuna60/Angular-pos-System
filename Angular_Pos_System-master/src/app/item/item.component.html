@@ -1,0 +1,57 @@
+<main class="container-fluid">
+  <section class="row">
+      <div class="col-12 col-lg-4">
+          <h1>ITEM MANAGEMENT</h1>
+          <form id="ItemForm">
+              <div class="form-group">
+                  <label for="txtItemID">ITEM ID</label>
+                  <input name="itemID" class="form-control" id="txtItemID" type="text">
+                  <span class="control-error" id="lblItemID"></span>
+              </div>
+              <div class="form-group">
+                  <label for="txtItemDes">ITEM DESCRIPTION</label>
+                  <input name="itemDes" class="form-control" id="txtItemDes" type="text">
+                  <span class="control-error" id="lblItemDes"></span>
+              </div>
+              <div class="form-group">
+                  <label for="txtItemUnitPrice">ITEM UNIT PRICE</label>
+                  <input name="unitPrice" class="form-control" id="txtItemUnitPrice" type="text">
+                  <span class="control-error" id="lblUnitPrice"></span>
+              </div>
+              <div class="form-group">
+                  <label for="txtItemQty">ITEM QTY</label>
+                  <input name="itemQty" class="form-control" id="txtItemQty" type="text">
+                  <span class="control-error" id="lblItemQty"></span>
+              </div>
+              <div class="btn-group">
+                  <button type="button" class="btn btn-primary" id="btnSaveItem">
+                      Save Item
+                  </button>
+                  <button type="button" class="btn btn-danger"
+                          id="btnItemDelete">Remove
+                  </button>
+                  <button type="button" class="btn btn-warning"
+                          id="btnItemUpdate">Update
+                  </button>
+                  <button type="button" class="btn btn-success" id="btnItemGetAll">Get All</button>
+                  <button type="button" class="btn btn-danger" id="btn-clear1">Clear All</button>
+              </div>
+          </form>
+      </div>
+      <div class="col-12 col-lg-8 mt-3">
+          <table class="table table-bordered table-hover">
+              <thead class="bg-danger text-white">
+              <tr>
+                  <th>ITEM ID</th>
+                  <th>ITEM DESCRIPTION</th>
+                  <th>ITEM UPRICE</th>
+                  <th>ITEM QTY</th>
+              </tr>
+              </thead>
+              <tbody id="tblItem">
+
+              </tbody>
+          </table>
+      </div>
+  </section>
+</main>

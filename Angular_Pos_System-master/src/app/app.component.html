@@ -1,0 +1,24 @@
+<header class="jumbotron bg-primary text-white p-3">
+  <h1 class="position-absolute" id="nav"></h1>
+  <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
+
+      <li class="list-group-item bg-danger text-white" >
+        <a class="text-white" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" >Home</a>
+      </li>
+
+      <li class="list-group-item bg-white" >
+        <a id="btnCustomer" routerLink="customer" routerLinkActive="active" ariaCurrentWhenActive="page" >Customer</a>
+      </li>
+
+      <li class="list-group-item bg-white" >
+        <a id="btnItem" routerLink="item" routerLinkActive="active" ariaCurrentWhenActive="page">Item</a>
+      </li>
+
+      <li class="list-group-item bg-white" >
+        <a id="btnPlaceOrder" routerLink="placeOrder" routerLinkActive="active" ariaCurrentWhenActive="page">Orders</a>
+      </li>
+
+  </ul>
+</header>
+
+<router-outlet></router-outlet>
